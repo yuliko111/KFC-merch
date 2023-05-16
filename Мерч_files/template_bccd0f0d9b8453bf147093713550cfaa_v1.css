@@ -2909,6 +2909,81 @@
     background: #469edc
 }
 
+/* Arrows */
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    outline: none;
+
+    background: rgba(186, 190, 202, 0.5);
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    z-index: 1;
+}
+
+/*
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+    opacity: 1;
+}
+*/
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 20px;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+    left: 50px;
+}
+
+.slick-prev:before {
+    content: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.80442 11.1968C5.6794 11.3221 5.50987 11.3926 5.33309 11.3926C5.15631 11.3926 4.98677 11.3221 4.86176 11.1968L0.195089 6.51524C0.0701079 6.38982 -0.000101592 6.21974 -0.000101577 6.0424C-0.000101561 5.86506 0.070108 5.69498 0.195089 5.56957L4.86176 0.88804C4.98749 0.766215 5.15589 0.698804 5.33069 0.700328C5.50549 0.701852 5.6727 0.772189 5.7963 0.896188C5.91991 1.02019 5.99002 1.18793 5.99154 1.36328C5.99306 1.53864 5.92586 1.70758 5.80442 1.83371L2.27576 5.37361L11.3331 5.37361C11.5099 5.37361 11.6795 5.44408 11.8045 5.5695C11.9295 5.69492 11.9998 5.86503 11.9998 6.0424C11.9998 6.21978 11.9295 6.38989 11.8045 6.51531C11.6795 6.64073 11.5099 6.71119 11.3331 6.71119L2.27576 6.71119L5.80442 10.2511C5.9294 10.3765 5.99961 10.5466 5.99961 10.7239C5.99961 10.9013 5.9294 11.0713 5.80442 11.1968Z' fill='white'/%3E%3C/svg%3E%0A");
+    width: 12px;
+    height: 11px;
+}
+
+.slick-next {
+    right: 50px;
+}
+
+.slick-next:before {
+    content: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.19533 0.896008C6.32035 0.770629 6.48989 0.700195 6.66667 0.700195C6.84344 0.700195 7.01298 0.770629 7.138 0.896008L11.8047 5.57754C11.9296 5.70295 11.9999 5.87303 11.9999 6.05037C11.9999 6.22771 11.9296 6.39779 11.8047 6.5232L7.138 11.2047C7.01227 11.3266 6.84386 11.394 6.66907 11.3924C6.49427 11.3909 6.32706 11.3206 6.20345 11.1966C6.07985 11.0726 6.00974 10.9048 6.00822 10.7295C6.0067 10.5541 6.07389 10.3852 6.19533 10.2591L9.724 6.71916L0.666667 6.71916C0.489856 6.71916 0.320286 6.6487 0.195262 6.52328C0.0702379 6.39785 -1.51486e-09 6.22774 -1.46625e-09 6.05037C-1.41764e-09 5.873 0.0702379 5.70289 0.195262 5.57746C0.320286 5.45204 0.489856 5.38158 0.666667 5.38158L9.724 5.38158L6.19533 1.84168C6.07035 1.71626 6.00014 1.54618 6.00014 1.36884C6.00014 1.1915 6.07035 1.02142 6.19533 0.896008Z' fill='white'/%3E%3C/svg%3E%0A");
+    width: 12px;
+    height: 11px;
+}
+
+
 .pslider-slide {
     width: 100%;
     height: auto
@@ -5682,6 +5757,15 @@ li.program-items-element-info-list-li::before {
     margin-top: 24px
 }
 
+.merch-item-select-description {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #212946;
+    margin-top: 40px;
+}
+
 .merch-item-select-size-grid-element {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5696,7 +5780,13 @@ li.program-items-element-info-list-li::before {
     height: 30px;
     padding-bottom: 2px;
     border: 1px solid rgba(186, 190, 202, .5);
-    border-radius: 5px
+    border-radius: 5px;
+
+    color: #212946;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: lowercase;
 }
 
 .merch-item-select-size-grid {
@@ -5713,6 +5803,7 @@ li.program-items-element-info-list-li::before {
 .merch-item-select-size-grid-element-oos {
     background: rgba(186, 190, 202, .5);
     /*border:none*/
+    border-color: transparent;
 }
 
 .merch-item-select {
@@ -5783,9 +5874,9 @@ li.program-items-element-info-list-li::before {
 .merch-item-info-delivery {
     font-weight: 400;
     margin-top: 24px;
-    font-size: 10px;
-    line-height: 14px;
-    color: #babeca
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
 }
 
 .merch-item-info-discount {
@@ -5799,23 +5890,47 @@ li.program-items-element-info-list-li::before {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-top: 24px;
+}
+
+.merch-item-info-discount>span {
     font-weight: 400;
-    font-size: 13px;
-    line-height: 20px;
     -webkit-text-decoration-line: line-through;
     text-decoration-line: line-through;
-    color: #babeca;
-    margin-top: 24px
+    /*color: #babeca;*/
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #7A8197;
 }
 
 .merch-item-info-price {
     font-weight: 800;
     font-size: 26px;
     line-height: 39px;
-    color: #469edc
+    color: #469edc;
 }
 
-.merch-item-info-bonus {
+.merch-item-discount-percent {
+    width: 24px;
+    height: 24px;
+    background: #FF744E;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.merch-item-discount-percent span {
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.merch-item-info-bonuses {
     font-weight: 400;
     font-size: 10px;
     line-height: 14px;
