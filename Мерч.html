@@ -22,7 +22,6 @@
     <link href="./Мерч_files/main.popup.bundle.css" type="text/css" rel="stylesheet">
     <link href="./Мерч_files/iti.min.css" type="text/css" rel="stylesheet">
     <link href="./Мерч_files/iti-world.min.css" type="text/css" rel="stylesheet">
-    <link href="./Мерч_files/easyzoom.css" type="text/css" rel="stylesheet" />
     <link href="./Мерч_files/template_bccd0f0d9b8453bf147093713550cfaa_v1.css" type="text/css"
         data-template-style="true" rel="stylesheet">
     <link href="./Мерч_files/popup.css" type="text/css" data-template-style="true" rel="stylesheet">
@@ -166,12 +165,6 @@
             <!--'end_frame_cache_g8taYv'-->
         </div>
 
-        <div class="easyzoom easyzoom--overlay">
-            <a href="./Мерч_files/item_3x.jpg">
-                <img src="./Мерч_files/item_1x.jpg" alt="" width="373" height="484" />
-            </a>
-        </div>
-
         <div class="merch-wrapper">
             <div class="wrapper">
                 <div class="path-btn-wrp">
@@ -213,8 +206,25 @@
                 </div>
                 <div class="merch-item" id="bx_117848907_1909" itemscope="" itemtype="http://schema.org/Product">
 
+                    <div class="merch-item-photo-wrap">
+                        <ul class="merch-item-photo-list">
+                            <li class="merch-item-photo-element">
+                                <a href="#">
+                                    <img src="./Мерч_files/item_1x.jpg" width="373" height="484"
+                                        class="merch-item-photo-img" title="blue" alt="blue">
+                                </a>
+                            </li>
+                            <li class="merch-item-photo-element">
+                                <a href="#">
+                                    <img src="./Мерч_files/item_1x-crop.jpg" width="373" height="484"
+                                        class="merch-item-photo-img" title="blue" alt="blue">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <div class="merch-item-photo-slider" id="bx_117848907_1909_big_slider">
+
+                    <!-- <div class="merch-item-photo-slider" id="bx_117848907_1909_big_slider">
                         <div class="merch-item-photo-slider-container slick-initialized slick-slider slick-dotted"
                             data-entity="images-container">
                             <div class="slick-list draggable">
@@ -238,26 +248,44 @@
                                         aria-describedby="slick-slide-control00" style="width: 484px;"></div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
                     <div class="merch-item-info">
                         <div class="merch-item-info-title">Родился на Камчатке</div>
-                        <div class="merch-item-select-description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            </p>
+                        <div class="merch-item-info-type">ФУТБОЛКА</div>
+
+                        <!-- <div class="merch-item-info-discount">
+                            <span class="merch-item-old-price"
+                                id="bx_117848907_1909_old_price">2&nbsp;000&nbsp;р.</span>
+                            <div class="merch-item-discount-percent">
+                                <span id="bx_117848907_1909_price_discount">-10%</span>
+                            </div>
+                        </div> -->
+
+                        <div class="merch-item-info-price" id="bx_117848907_1909_price">
+                            1&nbsp;000&nbsp;р.
+                            <div class="merch-item-info-bonuses">начислим 100 бонусов</div>
                         </div>
                         <div class="merch-item-select" id="bx_117848907_1909_skudiv">
 
                             <div class="merch-item-select-size" data-entity="sku-line-block">
-                                <div class="merch-item-select-size-text">Выбранный размер:<span>M</span></div>
+                                <div class="merch-item-select-size-text">Размер:</div>
                                 <ul class="merch-item-select-size-grid">
                                     <li class="merch-item-select-size-grid-element merch-item-select-size-grid-element-selected"
-                                        title="M" data-treevalue="35_14" data-onevalue="14">
+                                        title="M" data-treevalue="35_15" data-onevalue="15">
+                                        <div class="product-item-scu-item-text-block">
+                                            <div class="product-item-scu-item-text">XS</div>
+                                        </div>
+                                    </li>
+                                    <li class="merch-item-select-size-grid-element" title="S" data-treevalue="35_15"
+                                        data-onevalue="15">
+                                        <div class="product-item-scu-item-text-block">
+                                            <div class="product-item-scu-item-text">S</div>
+                                        </div>
+                                    </li>
+                                    <li class="merch-item-select-size-grid-element merch-item-select-size-grid-element-oos" title="M" data-treevalue="35_14"
+                                        data-onevalue="14">
                                         <div class="product-item-scu-item-text-block">
                                             <div class="product-item-scu-item-text">M</div>
                                         </div>
@@ -288,71 +316,70 @@
                                     </li>
                                 </ul>
                             </div>
-
-
-                            <div class="merch-item-select-color" data-entity="sku-line-block">
-                                <div class="merch-item-select-color-text">Выбранный цвет: <span>black</span></div>
-                                <ul class="merch-item-select-color-grid">
-                                    <li title="red" data-treevalue="36_18" data-onevalue="18">
-                                        <button><img src="./Мерч_files/m9hj84autdq269hph2ed5hdssmxsa09u.png"
-                                                class="merch-item-select-color-grid-element" title="red" alt="red">
-                                        </button>
-                                    </li>
-                                    <li title="green" data-treevalue="36_19" data-onevalue="19">
-                                        <button><img src="./Мерч_files/no_photo.png"
-                                                class="merch-item-select-color-grid-element" title="green" alt="green">
-                                        </button>
-                                    </li>
-                                    <li title="blue" data-treevalue="36_20" data-onevalue="20">
-                                        <button><img src="./Мерч_files/merch-small.jpg"
-                                                class="merch-item-select-color-grid-element" title="blue" alt="blue">
-                                        </button>
-                                    </li>
-                                    <li title="black" data-treevalue="36_21" data-onevalue="21"
-                                        class="merch-item-select-size-grid-element-selected">
-                                        <button><img src="./Мерч_files/no_photo.png"
-                                                class="merch-item-select-color-grid-element" title="black" alt="black">
-                                        </button>
-                                    </li>
-                                    <li title="-" data-treevalue="36_0" data-onevalue="0"
-                                        class="merch-item-select-size-grid-element-oos" style="display: none;">
-                                        <button><img src="./Мерч_files/no_photo.png"
-                                                class="merch-item-select-color-grid-element" title="-" alt="-">
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-
-
-                        </div>
-
-                        <div class="merch-item-info-delivery">
-                            Доставка по России: 450 рублей
-                            <br><br>
-                            Самовывоз: г. Петропавловск-Камчатский, ул.Авачинская д.15 —бесплатно или курьером — 200
-                            рублей
-                        </div>
-                        <div class="merch-item-info-discount">
-                            <span class="merch-item-old-price"
-                                id="bx_117848907_1909_old_price">2&nbsp;000&nbsp;р.</span>
-                            <div class="merch-item-discount-percent">
-                                <span id="bx_117848907_1909_price_discount">-10%</span>
-                            </div>
-                        </div>
-
-                        <div class="merch-item-info-price" id="bx_117848907_1909_price">
-                            1&nbsp;000&nbsp;р.
-                            <span class="merch-item-info-bonuses">начислим 100 бонусов</span>
                         </div>
 
                         <div data-entity="main-button-container">
                             <div id="bx_117848907_1909_basket_actions">
-                                <button class="bluebutton" id="bx_117848907_1909_add_basket_link">Добавить в
-                                    корзину</button>
+                                <button class="bluebutton" id="bx_117848907_1909_add_basket_link">
+                                    Добавить в корзину
+                                </button>
                             </div>
-                            <button class="bluebutton" id="bx_117848907_1909_not_avail" style="display: none;"> Нет в
-                                наличии</button>
+                            <button class="bluebutton" id="bx_117848907_1909_not_avail" style="display: none;">
+                                Нет в наличии
+                            </button>
                         </div>
+
+                        <div class="merch-item-info-delivery">
+                            <p class="merch-item-info-delivery-line">ДОСТАВКА:</p>
+                            <p class="merch-item-info-delivery-line">Почта России: 450 рублей (в любой город РФ)</p>
+                            <p class="merch-item-info-delivery-line">Самовывоз: бесплатно (г. Петропавловск-Камчатский,
+                                ул. Авачинская 15)</p>
+                        </div>
+
+
+                        <div class="merch-item-select-color" data-entity="sku-line-block">
+                            <div class="merch-item-select-color-text">В другом цвете:</div>
+                            <ul class="merch-item-select-color-grid">
+                                <li title="red" data-treevalue="36_18" data-onevalue="18">
+                                    <button>
+                                        <img src="./Мерч_files/m9hj84autdq269hph2ed5hdssmxsa09u.png"
+                                            class="merch-item-select-color-grid-element" title="red" alt="red">
+                                    </button>
+                                    <div class="merch-item-select-color-label">черный</div>
+                                </li>
+                                <li title="green" data-treevalue="36_19" data-onevalue="19">
+                                    <button>
+                                        <img src="./Мерч_files/no_photo.png"
+                                            class="merch-item-select-color-grid-element" title="green" alt="green">
+                                    </button>
+                                    <div class="merch-item-select-color-label">черный</div>
+                                </li>
+                                <li title="blue" data-treevalue="36_20" data-onevalue="20">
+                                    <button>
+                                        <img src="./Мерч_files/merch-small.jpg"
+                                            class="merch-item-select-color-grid-element" title="blue" alt="blue">
+                                    </button>
+                                    <div class="merch-item-select-color-label">черный</div>
+                                </li>
+                                <li title="black" data-treevalue="36_21" data-onevalue="21"
+                                    class="merch-item-select-size-grid-element-selected">
+                                    <button>
+                                        <img src="./Мерч_files/no_photo.png"
+                                            class="merch-item-select-color-grid-element" title="black" alt="black">
+                                    </button>
+                                    <div class="merch-item-select-color-label">черный</div>
+                                </li>
+                                <li title="-" data-treevalue="36_0" data-onevalue="0"
+                                    class="merch-item-select-size-grid-element-oos" style="display: none;">
+                                    <button>
+                                        <img src="./Мерч_files/no_photo.png"
+                                            class="merch-item-select-color-grid-element" title="-" alt="-">
+                                    </button>
+                                    <div class="merch-item-select-color-label">черный</div>
+                                </li>
+                            </ul>
+                        </div>
+
 
                         <meta itemprop="name" content="test">
                         <meta itemprop="category" content="">
@@ -773,7 +800,6 @@
     <script src="./Мерч_files/jquery.fancybox.min.js.Без названия"></script>
     <script src="./Мерч_files/main.popup.bundle.js.Без названия"></script>
     <script src="./Мерч_files/currency-core.bundle.js.Без названия"></script>
-    <script src="./Мерч_files/easyzoom.js"></script>
     <script type="text/javascript"
         id="">(function (a, e, f, g, b, c, d) {
                 a[b] = a[b] || function () {
@@ -2757,9 +2783,6 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
             });
-        });
-        $(document).ready(function(){
-            $('.easyzoom').easyZoom();
         });
     </script>
     <div>
