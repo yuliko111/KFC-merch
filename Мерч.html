@@ -22,6 +22,7 @@
     <link href="./Мерч_files/main.popup.bundle.css" type="text/css" rel="stylesheet">
     <link href="./Мерч_files/iti.min.css" type="text/css" rel="stylesheet">
     <link href="./Мерч_files/iti-world.min.css" type="text/css" rel="stylesheet">
+    <link href="./Мерч_files/easyzoom.css" type="text/css" rel="stylesheet" />
     <link href="./Мерч_files/template_bccd0f0d9b8453bf147093713550cfaa_v1.css" type="text/css"
         data-template-style="true" rel="stylesheet">
     <link href="./Мерч_files/popup.css" type="text/css" data-template-style="true" rel="stylesheet">
@@ -50,10 +51,8 @@
         content="https://www.allaboutkamchatka.ru/upload/iblock/bc0/4juz3dn3k1qgz40quqw2wllcupy9ypp6.jpg">
     <meta property="og:url" content="https://www.allaboutkamchatka.ru/merch/test/">
 
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="facebook-domain-verification" content="d4onf1f7tlcy3yj0vsppbpw7vr3u5n">
-
 
     <script type="text/javascript" async="" src="./Мерч_files/loader.js.Без названия"></script>
     <script async="" src="./Мерч_files/openapi.js.Без названия"></script>
@@ -71,7 +70,6 @@
 </head>
 
 <body>
-
 
     <div id="panel">
     </div>
@@ -167,6 +165,13 @@
             </div>
             <!--'end_frame_cache_g8taYv'-->
         </div>
+
+        <div class="easyzoom easyzoom--overlay">
+            <a href="./Мерч_files/item_3x.jpg">
+                <img src="./Мерч_files/item_1x.jpg" alt="" width="373" height="484" />
+            </a>
+        </div>
+
         <div class="merch-wrapper">
             <div class="wrapper">
                 <div class="path-btn-wrp">
@@ -768,18 +773,20 @@
     <script src="./Мерч_files/jquery.fancybox.min.js.Без названия"></script>
     <script src="./Мерч_files/main.popup.bundle.js.Без названия"></script>
     <script src="./Мерч_files/currency-core.bundle.js.Без названия"></script>
-    <script type="text/javascript" id="">(function (a, e, f, g, b, c, d) {
-            a[b] = a[b] || function () {
-                (a[b].a = a[b].a || []).push(arguments)
-            };
-            a[b].l = 1 * new Date;
-            c = e.createElement(f);
-            d = e.getElementsByTagName(f)[0];
-            c.async = 1;
-            c.src = g;
-            d.parentNode.insertBefore(c, d)
-        })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-        ym(45683988, "init", { clickmap: !0, trackLinks: !0, accurateTrackBounce: !0, webvisor: !0, trackHash: !0 });</script>
+    <script src="./Мерч_files/easyzoom.js"></script>
+    <script type="text/javascript"
+        id="">(function (a, e, f, g, b, c, d) {
+                a[b] = a[b] || function () {
+                    (a[b].a = a[b].a || []).push(arguments)
+                };
+                a[b].l = 1 * new Date;
+                c = e.createElement(f);
+                d = e.getElementsByTagName(f)[0];
+                c.async = 1;
+                c.src = g;
+                d.parentNode.insertBefore(c, d)
+            })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+            ym(45683988, "init", { clickmap: !0, trackLinks: !0, accurateTrackBounce: !0, webvisor: !0, trackHash: !0 });</script>
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/45683988" style="position:absolute; left:-9999px;" alt=""></div>
     </noscript>
@@ -2750,6 +2757,9 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
             });
+        });
+        $(document).ready(function(){
+            $('.easyzoom').easyZoom();
         });
     </script>
     <div>
