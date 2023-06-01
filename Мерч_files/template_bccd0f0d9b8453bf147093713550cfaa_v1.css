@@ -7306,9 +7306,33 @@ li.program-items-element-info-list-li::before {
     margin-top: 64px
 }
 
+.merch-filter-wrapper .merch-item-info-delivery--desctop {
+    display: block;
+}
+.merch-filter-wrapper .merch-item-info-delivery--mobile {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
     .rent-item-wrapper .merch-item-info-delivery {
         margin-top: 24px
+    }
+    .merch-filter-wrapper .merch-filter-wrapper .merch-item {
+        flex-wrap: wrap;
+    }
+    
+    .merch-filter-wrapper .merch-item-info-delivery--desctop {
+        display: none;
+    }
+    .merch-filter-wrapper .merch-item-info-delivery--mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .merch-filter-wrapper .merch-item-info {
+        width: 100%;
+        margin-top: 30px;
     }
 }
 
@@ -11800,7 +11824,7 @@ textarea {
     cursor: pointer;
 }
 
-@media (min-width: 640px) and (max-width: 959px) {
+@media (min-width: 481px) and (max-width: 1024px) {
     .merch-item-photo-element:nth-child(2) {
        display: none;
     }
